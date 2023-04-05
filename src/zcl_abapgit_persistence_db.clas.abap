@@ -176,8 +176,8 @@ CLASS ZCL_ABAPGIT_PERSISTENCE_DB IMPLEMENTATION.
   METHOD list_by_type.
     SELECT * FROM (c_tabname)
       
-      WHERE type = @iv_type INTO TABLE @rt_content
-      ORDER BY PRIMARY KEY.                               "#EC CI_SUBRC
+      WHERE type = @iv_type
+      ORDER BY PRIMARY KEY INTO TABLE @rt_content.                               "#EC CI_SUBRC
   ENDMETHOD.
 
 
@@ -201,7 +201,7 @@ CLASS ZCL_ABAPGIT_PERSISTENCE_DB IMPLEMENTATION.
 
 * trigger dummy update task to automatically release locks at commit
     CALL FUNCTION lv_dummy_update_function
-      IN UPDATE TASK.
+      .
 
   ENDMETHOD.
 
