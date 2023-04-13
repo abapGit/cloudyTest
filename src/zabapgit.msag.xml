@@ -14,6 +14,12 @@
      <MSGNR>000</MSGNR>
      <TEXT>&amp;1&amp;2&amp;3&amp;4</TEXT>
     </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZABAPGIT</ARBGB>
+     <MSGNR>001</MSGNR>
+     <TEXT>&amp;1&amp;2&amp;3&amp;4</TEXT>
+    </T100>
    </T100>
   </asx:values>
  </asx:abap>
